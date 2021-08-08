@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>hiphop</title>
+    <meta charset="utf-8">
+    <script src="colors.js"></script>
+    <style>
+        h1{
+            text-align: center;
+            border-bottom: 3px gray solid;
+            font-size: 50px;
+            text-decoration: none;
+            margin: 1px;
+        }
+        
+        a{
+            color:black;
+            text-decoration: black;
+            }
+        
+        ol{
+            font-size: 15px;
+            font-weight: bold;
+
+            border-right: 3px gray solid;
+            width: 100px;
+            margin: 1px;
+            padding: 20px;
+        }
+
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #grid ol{
+         padding-left:33px;
+        }
+        #grid #article{
+        padding-left:25px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">힙합</a></h1>
+
+    <div id="grid">
+    <ol>
+    <li><a href="1.html">힙합의 역사</a></li>
+    <br>
+    <li><a href="2.html">추천 힙합 곡</a></li>
+    </ol>
+    </div>
+    <div id="article">
+    <h2></h2>
+    </div>
+
+    <input  type="button" value="Night" onclick="
+    nightdayhandler(this);
+    
+    ">
+
+    <p>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://hiphop-7.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </p>
+    
+    <p></p>
+</body>
+</html>
